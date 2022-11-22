@@ -19,7 +19,7 @@ public class HelloControllerTest {
     private MockMvc mvc;//스프링 테스트에 시작점
 
     @Test
-    public void hello_return() throws Exception{
+    public void helloReturn() throws Exception{
         String hello = "hello";
 
         mvc.perform(get("/hello"))
@@ -28,7 +28,7 @@ public class HelloControllerTest {
     }
 
     @Test
-    public void helloDto_return() throws Exception{
+    public void helloDtoReturn() throws Exception{
         String name = "hello";
         int amount = 1000;
 

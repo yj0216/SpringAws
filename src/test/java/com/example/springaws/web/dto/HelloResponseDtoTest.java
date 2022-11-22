@@ -5,7 +5,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class HelloResponseDtoTest {
 
     @Test
-    public void Lombok_Test(){
+    public void lombok_Test(){
         //given
         String name = "test";
         int amount = 1000;
