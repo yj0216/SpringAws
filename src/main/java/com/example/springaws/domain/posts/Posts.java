@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @NoArgsConstructor
 @Entity//테이블과 링크된 클래스임을 나타냄
-public class Posts {
+public class Posts extends BaseTimeEntity{
 
     @Id//해당 태이블의 PK(Primary Key)필드를 나타냄
     @GeneratedValue(strategy = GenerationType.IDENTITY)//PK의 생성 규칙
@@ -29,6 +29,11 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(String tile,String content){
+        this.title = tile;
+        this.content = content;
     }
 
 }
