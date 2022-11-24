@@ -19,7 +19,7 @@ public class Posts {
     @Column(length = 500,nullable = false)//기본값 외에 추가로 변경이 필요할시 사용
     private String title;
 
-    @Column(columnDefinition = "TEST",nullable = false)
+    @Column(columnDefinition = "TEXT",nullable = false)
     private String content;
 
     private String author;
